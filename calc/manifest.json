@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "战绩统计插件",
+  "version": "4.3",
+  "description": "计算页面战绩属性",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://club.navyfield.com.hk/plugin.php*"],
+      "js": ["content.js"],
+      "css": []
+    }
+  ]
+} 
